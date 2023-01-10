@@ -1,6 +1,6 @@
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
-title: "Jekyll + Tailwind" # the name of your site, e.g. ACME Corp.
+title: Justin Lane - Resume
 
 plugins:
   - jekyll-postcss
@@ -18,9 +18,18 @@ exclude:
   - package-lock.json
   - postcss.config.js
   - README.md
-  # - assets/css/tailwind.scss
 
 # files Jekyll should not delete from .site
 keep_files:
   - assets/css/tailwind.css
   - assets/css/tailwind.css.map
+
+# frontmatter
+
+email: justin at justinlane dot org
+description: >- # this means to ignore newlines until "baseurl:"
+  Justin Lane Resume Elixir React Native Ruby Developer
+
+resume:
+  intro_paragraph:  An independent self-starter, who can mentor, train, and coach others, communicate well, and complete work in a timely and efficient manner.
+  other_skills: [git, JavaScript, Ruby, React]

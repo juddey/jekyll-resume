@@ -3,11 +3,145 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <title>{{ page.title }} | {{ site.title }}</title>
+    <title>{{ site.title }}</title>
     <link rel="stylesheet" href="{{ "/assets/css/tailwind.css" | relative_url }}">
     <!-- <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}"> -->
   </head>
-  <body>
-    {{ content }}
+  <body class="w-full h-full">
+    <div class="max-w-5xl p-6 mx-auto bg-white print:max-w-a4 md:max-w-a4 md:h-a4 xsm:p-8 sm:p-9 md:p-16">
+      {% include header.html %}
+      <div class="columns-1 md:columns-2 gap-4 print:columns-2 md:h-a4-col print:h-a4-col col-fill-auto">
+        <!-- To keep in the same column -->
+          <section class="mt-8 first:mt-0 break-inside-avoid-column">
+            <p class="mb-4 mt-4 text-sm italic text-gray-700">
+              {{ site.resume.intro_paragraph }}
+            </p>
+  
+            <h2 class="font-bold tracking-widest text-sm2 text-gray-550 print:font-normal">
+              WORK EXPERIENCE
+            </h2>
+  
+            {% for job in site.data.experience %}
+            <section class="pt-4 break-inside-avoid">
+              <header>
+                <h3 class="text-lg font-semibold text-gray-700 leading-snugish">
+                  {{ job.company }}
+                </h3>
+                <p class="leading-normal text-md text-gray-650">
+                  {{ job.duration }} {% if job.title %} | {{ job.title }} {% endif %}
+                </p>
+              </header>
+              <p class="mt-2 text-md text-gray-700 leading-normal">
+                {{ job.comment}}
+              </p>
+              {% for project in job.projects %}
+              <section class="pt-2">
+                <h3 class="text-lg font-semibold text-gray-700 leading-snugish">
+                  {{ project.name }}
+                </h3>
+                <p class="text-sm leading-normal text-gray-650">
+                  {{ project.duration }}
+                </p>
+                <p class="mt-2.1 text-md text-gray-700 leading-normal">
+                  {{ project.comment}}
+                </p>
+                {% if project.highlights %}
+                <ul class='mt-2 ml-6 list-disc list-outside'>
+                  {% for highlight in project.highlights %}
+                  <li class="leading-normal text-gray-700 text-md">{{highlight}}</li>
+                  {% endfor %}
+                </ul>
+                {% endif %}
+                {% if project.links %}
+                <p class="mt-2.1 text-md text-gray-700 leading-normal"></p>
+                Online:
+                {% for link in project.links %}
+                &bull;
+                <a href="{{link.link}}" class="text-md text-gray-700 hover:underline">
+                  {{link.title}}
+                </a>
+                {% endfor %}
+                {% endif %}
+              </section>
+              {% endfor %}
+  
+              <ul class="">
+                {% for activity in job.activities %}
+                <li class="mt-2 text-md text-gray-700 leading-normal">
+                  <span class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
+                  {{ activity }}
+                </li>
+                {% endfor %}
+              </ul>
+            </section>
+            {% endfor %}
+          </section>
+        <div class="break-inside-avoid-column">
+          <section>
+            <section class="mt-4 first:mt-0">
+              <section class="mt-0 first:mt-4">
+  
+                <!-- To keep in the same column -->
+                <div class="break-inside-avoid">
+                  <h2 class="mb-4 font-bold tracking-widest text-sm2 text-gray-550 print:font-normal">
+                    SKILLS
+                  </h2>
+                  {% for skill in site.data.skills %}
+                  <section class="mt-4 break-inside-avoid">
+                    <header>
+                      <h3 class="text-lg font-semibold text-gray-700 leading-snugish">
+                        {{ skill.name }}
+                      </h3>
+                      <p class="leading-normal text-md text-gray-650">
+                        {{ skill.duration }}
+                      </p>
+                    </header>
+                    <ul class="">
+                      {% for comment in skill.comments %}
+                      <li class="mt-2.1 text-md text-gray-700 leading-normal">
+                        <span class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
+                        {{ comment }}
+                      </li>
+                      {% endfor %}
+  
+                      {% if skill.tooling %}
+                      <li class="mt-2.1 text-md text-gray-700 leading-normal">
+                        <span class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
+                        Tooling: {% for tool in skill.tooling %} &bull; {{ tool }} {% endfor %}
+                      </li>
+                      {% endif %}
+                    </ul>
+                  </section>
+                  {% endfor %}
+                </div>
+  
+                <section class="mt-4 break-inside-avoid">
+                  <header>
+                    <h3 class="text-lg font-semibold text-gray-700 leading-snugish">
+                      Other
+                    </h3>
+                  </header>
+                  <div class="my-3">
+                    <ul>
+                      {% for skill in site.resume.other_skills %}
+                      <li
+                        class="inline-flex items-center rounded-full border border-gray-400 px-3 py-1 text-xs font-medium text-gray-700 shadow-sm">
+                        {{ skill }}
+                      </li>
+                      {% endfor %}
+                    </ul>
+                  </div>
+                </section>
+              </section>
+  
+              <section class="mt-8 first:mt-0">
+                <!-- To keep in the same column -->
+                {% include education.html %}
+                {% include contact.html %}
+              </section>
+            </section>
+          </section>
+        </div>
+      </div>
   </body>
 </html>

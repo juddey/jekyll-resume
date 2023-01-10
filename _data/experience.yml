@@ -1,0 +1,50 @@
+- company: Alembic Pty Ltd
+  duration: Nov 2021 - Jan 2023
+  title: Senior Developer (Contract)
+  activities:
+    - Contracted to assist with developing an administrative function for a debit card system using Phoenix LiveView, Event Sourcing and Absinthe GraphQL
+    - Authored React/NextJS based frontend features and bug fixes
+    - Elicited, captured, clarified and documented stakeholder requirements
+
+- company:  Self Employed
+  duration: Jan 2015 - present
+  comment:  "For the last 6 years, I've been building SaaS solutions using React Native, Elixir, React, and Ruby. During this time, I launched the following applications:"
+  projects: 
+  - name:  with
+    duration: Since 2019
+    comment:  Fundraising and volunteer administration, plus community features such as feeds, news and chat, for churches, charities and other non-profit organisations
+    highlights:
+      - Incorporated Stripe for donations from church members
+      - Implemented Websockets to provide real-time UI
+      - Authenticated posts with text, video and documents
+      - Implemented a full CI/CD pipeline for Elixir and React Native using Gitlab CI
+    links:
+      - title: Landing Site
+        link: https://withhq.com/
+      - title: Google Play
+        link: https://withhq.com/android
+  
+  - name:  tiaki
+    duration: 2017 - 2018
+    comment:  Application and enrolment management, recording learning, and day-to-day administration for Early Childhood Education centres 
+    highlights:
+      - Developed React SPA for administrative users
+      - Built room-based checkin/checkout for children
+  
+  - name:  kandid
+    duration: 2015 - 2016
+    comment:  Candidate management, application filtering and interview to offer processes for developers, employers and recruiters. 
+
+- company: Time Out
+  duration: Jan 2013 - Dec 2014
+  title: Career change
+  activities:
+    -  Self teaching HTML, CSS, JavaScript and Ruby on Rails as part of reskilling with open source programming tools 
+
+
+- company: University of Auckland
+  duration: Mar 2009 - Nov 2012
+  title: Business Analyst (Contract)
+  activities:
+    -  "From Mar 2009 - Oct 2010 - Project Lead for Oracle Campus Solutions Upgrade: Responsible for a team of three subject matter experts and nine product analysts" 
+    -  "Preparation of Business Requirement Documentation, Functional Specifications, and end user liaison"
