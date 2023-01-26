@@ -2,7 +2,7 @@
   duration: 5+ years
   comments: 
     - For all projects, used Phoenix web framework, (v1.2 -> current), first as api only, subsequently migrating to LiveView.
-  tooling: [phoenix, liveview, absinthe graphql, channels, guardian, oban, wallaby]
+  tooling: [phoenix, liveview, absinthe graphql, channels, guardian, oban, wallaby, ash framework]
 
 - name:  React Native
   duration: 5+ years
