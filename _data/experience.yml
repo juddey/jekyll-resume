@@ -2,13 +2,13 @@
   duration: Nov 2021 - Jan 2023
   title: Senior Developer (Contract)
   activities:
-    - Contracted to assist with developing an administrative function for a debit card system using Phoenix LiveView, Event Sourcing and Absinthe GraphQL
+    - Contracted to assist with developing an administrative function for a debit card system using Phoenix LiveView, Commanded Event Sourcing and Absinthe GraphQL
     - Authored React/NextJS based frontend features and bug fixes
     - Elicited, captured, clarified and documented stakeholder requirements
 
 - company:  Self Employed
   duration: Jan 2015 - present
-  comment:  "For the last 6 years, I've been building SaaS solutions using React Native, Elixir, React, and Ruby. During this time, I launched the following applications:"
+  comment:  "Building SaaS solutions using React Native, Elixir, React, and Ruby, launching:"
   projects: 
   - name:  with
     duration: Since 2019
@@ -16,12 +16,12 @@
     highlights:
       - Incorporated Stripe for donations from church members
       - Implemented Websockets to provide real-time UI
-      - Authenticated posts with text, video and documents
+      - Built authenticated posts with text, video and documents
       - Implemented a full CI/CD pipeline for Elixir and React Native using Gitlab CI
     links:
       - title: Landing Site
         link: https://withhq.com/
-      - title: Google Play
+      - title: Google Play Store
         link: https://withhq.com/android
   
   - name:  tiaki
