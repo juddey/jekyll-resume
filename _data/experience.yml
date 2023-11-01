@@ -19,11 +19,6 @@
       - Implemented Websockets to provide real-time UI
       - Built authenticated posts with text, video and documents
       - Implemented a full CI/CD pipeline for Elixir and React Native using Gitlab CI
-    links:
-      - title: Landing Site
-        link: https://withhq.com/
-      - title: Google Play Store
-        link: https://withhq.com/android
   
   - name:  tiaki
     duration: 2017 - 2018
