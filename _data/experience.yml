@@ -1,3 +1,9 @@
+- company: Self Employed
+  duration: Jan 2023 - present
+  title: Founder
+  activities:
+    - Self funded SaaS development with Elixir, and Phoenix LiveView. Currently in development mode.
+
 - company: Alembic Pty Ltd
   duration: Nov 2021 - Jan 2023
   title: Senior Developer (Contract)
@@ -8,11 +14,11 @@
     - Mentoring and training junior developers
 
 - company:  Self Employed
-  duration: Jan 2015 - present
+  duration: Jan 2015 - Nov 2021
   comment:  "Building SaaS solutions using React Native, Elixir, React, and Ruby, launching:"
   projects: 
   - name:  with
-    duration: Since 2019
+    duration: 2019 - 2021
     comment:  Fundraising and volunteer administration, plus community features such as feeds, news and chat, for churches, charities and other non-profit organisations
     highlights:
       - Incorporated Stripe for donations from church members
