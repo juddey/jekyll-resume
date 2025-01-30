@@ -1,10 +1,11 @@
-- company: Self Employed
-  duration: Jan 2023 - present
+- company: Volition
+  title: Developer (Contract)
+  duration: Apr 2024 - Dec 2024
   activities:
-    - Self funded SaaS development with Elixir, and Phoenix LiveView. Currently in development mode.
+    - Front End Development with React, SASS, Storybook & Shoelace Web Components.
 
 - company: Alembic Pty Ltd
-  duration: Nov 2021 - Jan 2023
+  duration: Nov 2021 - Dec 2022
   title: Senior Developer (Contract)
   activities:
     - Contracted to assist with developing an administrative function for a debit card system using Phoenix LiveView, Commanded Event Sourcing and Absinthe GraphQL
@@ -13,9 +14,13 @@
     - Mentoring and training junior developers
 
 - company:  Self Employed
-  duration: Jan 2015 - Nov 2021
-  comment:  "Building SaaS solutions using React Native, Elixir, React, and Ruby, launching:"
+  duration: Jan 2015 - current
+  comment:  "Building SaaS solutions using React Native, Elixir, React, and Ruby"
   projects: 
+  - name: edwrd
+    duration: 2023 - current
+    comment: Self funded SaaS development with Elixir and Phoenix LiveView. Currently in development mode.
+
   - name:  with
     duration: 2019 - 2021
     comment:  Fundraising and volunteer administration, plus community features such as feeds, news and chat, for churches, charities and other non-profit organisations
@@ -28,10 +33,7 @@
   - name:  tiaki
     duration: 2017 - 2018
     comment:  Application and enrolment management, recording learning, and day-to-day administration for Early Childhood Education centres 
-    highlights:
-      - Developed React SPA for administrative users
-      - Built room-based checkin/checkout for children
-  
+
   - name:  kandid
     duration: 2015 - 2016
     comment:  Candidate management, application filtering and interview to offer processes for developers, employers and recruiters. 
